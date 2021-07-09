@@ -1,0 +1,7 @@
+{
+  "name": "scratch-and-wincash",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

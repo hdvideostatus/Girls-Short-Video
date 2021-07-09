@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="6" *ngFor="let item of videoData">
+        <ion-card (click)="goVideoSlides(item)" class="ion-no-margin costum_card">
+          <ion-card-content>
+            <div class="ion-text-center">
+              <ion-icon *ngIf="item.icon" [name]="item.icon" color="tertiary" style="font-size: 45px;"></ion-icon>
+              <h2 style="color: rgb(40, 30, 187);font-weight: bold;margin-top: 16px;">{{item.name}}</h2>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6"></ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
